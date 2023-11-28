@@ -1,0 +1,224 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+}
+
+#navbar {
+  width: 100%;
+
+  padding: 30px 20px;
+  /* background-color: burlywood; */
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 1px solid black;
+  align-items: center;
+}
+
+#navbar img {
+  margin-left: 30px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+#navbar .list {
+  width: 400px;
+  /* background-color:blueviolet; */
+}
+
+#navbar .list ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#navbar .list ul li a {
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2vw;
+  color: black;
+  font-weight: 500;
+}
+
+#search button {
+  border-style: none;
+  padding: 3px 3px;
+  padding-right: 200px;
+  border-radius: 30px;
+}
+
+.prim {
+  transition: 0.2ms ease-in-out;
+}
+
+.prim:hover {
+  padding: 10px 10px;
+  background-color: rgb(57, 126, 176);
+  color: white !important;
+  border-radius: 50%;
+}
+
+.hover:hover {
+  color: rgb(57, 126, 176) !important;
+}
+
+#content {
+  /* background-color: aqua; */
+  /* background-image: url("https://innovationatwork.ieee.org/wp-content/uploads/2022/04/bigstock-Smart-Home-Voice-Control-Smar-437591792_1024X684.png"); */
+  margin: 30px 15vw;
+  /* height: 80vh;
+    color:white; */
+}
+
+#content h4 {
+  margin: 10px 0px;
+}
+
+#image {
+  width: 100%;
+}
+
+#content #im {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#content #im a {
+  text-decoration: none;
+  color: black;
+  padding: 3px 3px;
+}
+
+.point:hover {
+  background-color: grey;
+}
+
+#content img {
+  margin-top: 10px;
+}
+
+#contentstart {
+  margin: 30px 17vw;
+}
+
+#contentstart p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+#contentstart #listitem {
+  margin: 20px 30px;
+}
+
+#contentstart #listitem ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+}
+#contentstart #listitem ul li a {
+  text-decoration: none;
+}
+
+.listitem {
+  margin: 20px 30px;
+}
+
+.listitem ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  justify-content: center;
+}
+.listitem ul li a {
+  text-decoration: none;
+}
+
+#steps {
+  margin: 30px 17vw;
+}
+
+#steps #step1 h1 {
+  text-align: center;
+}
+
+#steps #step1 img {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 11px;
+}
+
+#steps #step1 p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2;
+
+  margin-bottom: 20px;
+}
+
+#steps #step1 ul li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+#linkdiv ul {
+  list-style: circle;
+}
+
+#linkdiv ul li a {
+  color: rgb(144, 76, 9);
+  line-height: 2;
+}
+
+#bigfooter {
+  background-color: #555555;
+  text-align: center;
+  padding: 20px 100px;
+}
+
+#footer {
+  padding: 20px 30px;
+  color: white;
+  background-color: #555555;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#footer img {
+  height: 100px;
+  border-radius: 20px;
+}
+
+#footer .listing1 h2 {
+  font-weight: 500;
+}
+
+#footer .listing1 ul {
+  list-style: none;
+}
+
+#footer .listing1 ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#bigfooter p {
+  color: white;
+  margin-top: 10px;
+}

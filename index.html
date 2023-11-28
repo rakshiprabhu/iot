@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOT Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="navbar">
+       <!-- <img
+          src="image/WhatsApp Image 2023-11-26 at 18.24.26_7c6110a5.jpg"
+          alt="logo"
+        />
+
+        <div id="search">
+          <button>search</button>
+        </div>-->
+<!--   
+        <div class="list">
+          <ul>
+            <li><a href="#" class="prim">Log In</a></li>
+            <li><a href="#" class="prim">Sign Up</a></li>
+          </ul>
+        </div>-->
+      </div>
+      <div id="content">
+        <h1>IOT BASED SMART DUSTBIN</h1>
+        <h4>By ADITHI,RAKSHITHA,MADHUMITHA</h4>
+        <h4>Guided by Dr. Jason Elroy Martis,Associate Professor,ISE NMAMIT</h4>
+
+       <!--- <div id="im">
+          <a href="#" class="point">⬇️ Download</a>
+          <a href="#" class="point">❤️ favourite</a>
+        </div>
+      -->
+        <img
+          id="image"
+          src="first.jpg"          alt=""/>
+      </div>
+
+      <div id="contentstart">
+        <p>
+           If you are wondering what a smart bin is, then here is your answer! Smart bin is the new high 
+          technology that integrated waste containers with smart sensors, which allows you to track 
+          through the waste management processes. For example, with the smart waste bin system 
+          you can control the occupancy ratio of your smart waste bins. The capability to track the 
+          occupancy ratio of your smart waste bins provides your business with many benefits. It 
+          provides you successful time management in your waste management process. And also, it 
+          helps you with increasing efficiency in your waste management. Your fleet can make the best 
+          choice in an optimized route plan.
+          Thanks to smart bin technology your business can efficiently manage your waste. So, if you 
+          are wondering about the details of smart bins here, they are! Smart bin sensors are attached 
+          to the dust bins. With that you can manage to track the fullness level of your smart trash bins 
+          efficiently. If you are curious about how the smart bin sensors work the answer is gateways. 
+          They are the link between sensors and the IoT (Internet of Things) platform. At that point, you 
+          can ask what IoT is. Basically, IoT ensures your business to access real-time data. So that you 
+          can track the location of your waste truck fleet or the location of your smart bins anytime you 
+          want. With gateway technology, the data collected from the smart bin sensors are sent to the 
+          cloud. So that you can easily track your business’s waste management process. They provide
+           assistance in optimization of the most efficient route that includes only the smart bins that 
+          are full and need to be emptied.
+          Moreover, these devices generate smart schedules for your waste truck drivers and they 
+          manage your waste in the most effective way.
+          <br />
+        </p>
+
+      <!----  <div id="listitem">
+          <ul>
+            <li><a href="#">💡 Add Tip</a></li>
+            <li><a href="#">🙋‍♀️ ask question</a></li>
+            <li><a href="#">🗨️ comments</a></li>
+            <li><a href="#">⬇️ Download</a></li>
+          </ul>
+        </div>-->
+        <hr />
+      </div>
+
+      <div id="steps">
+        <div id="step1">
+          <h1>Step 1: Components Required</h1>
+
+          
+          <div>
+            <h3>1. Ultrasonic Sensor</h3>
+            <img src="ultra.jpg" alt="photo" />
+            <p>
+              Measures distance using sound waves, emitting pulses and calculating distance based on echo reception.
+            </p>
+          </div>
+          
+          <div>
+            <h3>2. Servo Motor</h3>
+            <img src="servo.jpg" alt="photo" />
+            <p>
+              Precise motor that rotates to specific angles, controlled by sending electrical signals for position adjustment
+            </p>
+          </div>
+
+          <div>
+            <h3>3. Arduino</h3>
+            <img src="ard.jpg" alt="photo" />
+            <p>
+              Open-source microcontroller platform enabling prototyping and DIY electronics, utilizing a simple coding interface for programming
+            </p>
+          </div>
+
+          <div>
+            <h3>4. IR Sensor</h3>
+            <img src="IR.jpg" alt="photo" />
+            <p>
+              Detects infrared radiation, often used for proximity sensing, object detection, or remote control signal reception in devices
+            </p>
+          </div>
+
+          <div>
+            <h3>4. ESP32S </h3>
+            <img src="esp.jpg" alt="photo" />
+            <p>
+              ESP32S is a powerful Wi-Fi and Bluetooth-enabled microcontroller, featuring dual cores and a wide range of connectivity options for IoT applications.
+            </p>
+          </div>
+          
+          <div>
+            <h3>6. Other Components</h3>
+            <ul>
+              <li>USB connectors for charging and power supply.</li>
+              <li>Rechargeable battery to power up.</li>
+            </ul>
+          </div>
+
+  <!----        <div class="listitem">
+            <ul>
+              <li><a href="#">💡 Add Tip</a></li>
+              <li><a href="#">🙋‍♀️ ask question</a></li>
+              <li><a href="#">🗨️ comments</a></li>
+              <li><a href="#">⬇️ Download</a></li>
+            </ul>
+          </div>-->
+          <hr />
+        </div>
+        </div>
+
+        <div id="steps">
+          <div id="step1">
+            <h1>Step 2: Circuit Design and Assembly</h1>
+            <img src="circuit.jpeg" alt="photo" width="900" height="500"/>
+            <img src="cir2.jpg" alt="photo" width="900" height="500"/>
+
+            <p>
+              <H1>CONNECTIONS</H1>
+
+<ul><p>Servo Motor SG-90</p>
+<li>	Red Pin (Servo Motor) with Arduino 5v</li>
+<li>Black Pin (Servo Motor) with Arduino GND (Ground)</li>
+<li>Orange Pin (Servo Motor) with Arduino Pin 5</li>
+<br>
+<p>Ultrasonic Sensor</p>
+<li>VCC (Sensor) with Arduino 5v</li>
+<li>Trig (Sensor) with Arduino Pin 10</li>
+<li>Echo (Sensor) with Arduino Pin 11</li>
+<li>GND (Sensor) with Arduino GND</li>
+<br>
+<p>IR Sensor</p>
+<li>IR Sensor VCC pin → ESP32 3.3V or 5V pin</li>
+<li>IR Sensor GND pin → ESP32 GND pin</li>
+<li>IR Sensor Analog Output pin → ESP32 Analog Pin (e.g., A0)</li>
+</ul>		
+ 
+
+            </p>
+          </div>
+        </div>
+
+        <!--<div class="listitem">
+          <ul>
+            <li><a href="#">💡 Add Tip</a></li>
+            <li><a href="#">🙋‍♀️ ask question</a></li>
+            <li><a href="#">🗨️ comments</a></li>
+            <li><a href="#">⬇️ Download</a></li>
+          </ul>
+        </div>-->
+        <hr />
+      </div>
+    <div id="steps">
+      <div id="step1">
+        <h1>Step 3: CODES AND CODING LOGIC</h1>
+        <img src="code1.jpg" alt="photo" width="900" height="500"/>
+        <img src="code2i.jpeg" alt="photo" width="900" height="500"/>
+        <p>
+         <ul> <li>The Arduino continuously measures the distance detected by the ultrasonic sensor.
+When the distance is within a predefined range (indicating an object is close enough), the Arduino triggers the servo motor to open the lid by sending the appropriate signal to the servo motor's signal pin.
+After a specified duration or when the object moves away (distance increases), the Arduino triggers 
+the servo motor to close the lid.</li>
+<li>The code is written for esp32s which reads the IR sensor's output. When it detects fullness (if output signal changes), send this information to the Blynk app using Blynk's functions.
+  Blynk Visualization: The provided code uses the Blynk app's Virtual LED widget (V1) to display the status 
+  of the obstacle detection. When an obstacle (dustbin fullness in this case) is detected by the IR sensor, 
+  it sets the Virtual LED widget (V1) to its maximum value (255), indicating the presence of an obstacle 
+  (or fullness). When no obstacle is detected, it sets the Virtual LED widget (V1) to zero, signifying an 
+  absence of an obstacle.</li></ul></p>
+        </p>
+      </div>
+    </div>
+
+   <!----     <div class="listitem">
+          <ul>
+            <li><a href="#">💡 Add Tip</a></li>
+            <li><a href="#">🙋‍♀️ ask question</a></li>
+            <li><a href="#">🗨️ comments</a></li>
+            <li><a href="#">⬇️ Download</a></li>
+          </ul>
+        </div>
+        <hr />
+      </div>
+    -->
+      <div id="steps">
+        <div id="step1">
+            <h1>Step 4: ADVANTAGES</h1>
+            <img src="result.jpg"photo" width="200" height="500"/>
+            <p>
+              The results of an IoT-based smart dustbin project can be significant in terms of improving 
+waste management efficiency and sustainability. Some of the potential results of such a 
+project include: <ul><li>
+1. Improved Waste Management: By using sensors to detect the fill level of dustbins in 
+real-time, waste management teams can optimize their collection routes and schedules, 
+reducing unnecessary collections and saving time and resources. </li>
+<li>
+2. Reduced Environmental Impact: IoT-based smart dustbins can significantly reduce the 
+amount of waste that ends up in landfills. By optimizing the collection process, these dustbins 
+help ensure that waste is disposed of in a timely and efficient manner, reducing the risk of 
+littering and pollution.</li>
+<li>
+3. Better Public Hygiene: Smart dustbins come equipped with features such as automatic 
+lids and foot pedals, reducing the need for physical contact and improving hygiene. This is 
+especially important in public areas where multiple people may be using the same bin.</li>
+<li>
+4. Cost Savings: By optimizing the waste collection process, smart dustbins can help 
+reduce the overall cost of waste management. With real-time data on waste levels, waste 
+management teams can plan their routes and collections more efficiently, leading to 
+significant cost savings in the long run.</li>
+<li>
+Overall, an IoT-based smart dustbin project can have a positive impact on waste management, 
+environmental sustainability, and public health and hygiene. With the increasing importance 
+of these issues, such projects are becoming increasingly relevant and necessary for creating a 
+more sustainable future.</li></ul>
+            </p>
+          </div>
+        </div>
+        </div>
+
+      <!----  <div class="listitem">
+          <ul>
+            <li><a href="#">💡 Add Tip</a></li>
+            <li><a href="#">🙋‍♀️ ask question</a></li>
+            <li><a href="#">🗨️ comments</a></li>
+            <li><a href="#">⬇️ Download</a></li>
+          </ul>
+        </div>
+      -->
+        <hr />
+      </div>
+
+
+      <!--<div id="bigfooter">
+        <div id="footer">
+          <img
+            src="image/WhatsApp Image 2023-11-26 at 18.24.26_7c6110a5.jpg"
+            alt="logo"
+          />
+
+          <div class="listing1">
+            <h2>Categories</h2>
+            <ul>
+              <li><a href="#">Circuits</a></li>
+              <li><a href="#">Workshop</a></li>
+              <li><a href="#">craft</a></li>
+              <li><a href="#">cooking</a></li>
+            </ul>
+          </div>
+
+          <div class="listing1">
+            <h1></h1>
+            <ul>
+              <li><a href="#">Circuits</a></li>
+              <li><a href="#">Workshop</a></li>
+              <li><a href="#">craft</a></li>
+              <li><a href="#">cooking</a></li>
+            </ul>
+          </div>
+
+          <div class="listing1">
+            <h2>About US</h2>
+            <ul>
+              <li><a href="#">Circuits</a></li>
+              <li><a href="#">Workshop</a></li>
+              <li><a href="#">craft</a></li>
+              <li><a href="#">cooking</a></li>
+            </ul>
+          </div>
+
+          <div class="listing1">
+            <h2>Resources</h2>
+            <ul>
+              <li><a href="#">Circuits</a></li>
+              <li><a href="#">Workshop</a></li>
+              <li><a href="#">craft</a></li>
+              <li><a href="#">cooking</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+
+        <p>
+          Terms of Service| Privacy Statement| Privacy settings| Legal Notices &
+          Trademarks
+        </p>
+      </div>
+    </div>-->
+<!---
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+      integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+-->
+  </body>
+</html>
